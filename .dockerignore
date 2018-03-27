@@ -1,0 +1,5 @@
+templates/
+.git
+.env.example
+config.py
+init.sh

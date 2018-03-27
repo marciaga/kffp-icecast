@@ -8,6 +8,10 @@ username = os.getenv('ADMIN_USERNAME')
 password = os.getenv('ADMIN_PASSWORD')
 source_password = os.getenv('SOURCE_PASSWORD')
 relay_password = os.getenv('RELAY_PASSWORD')
+full_life_username = os.getenv('FULL_LIFE_USERNAME')
+full_life_password = os.getenv('FULL_LIFE_PASSWORD')
+remote_broadcast_username = os.getenv('REMOTE_BROADCAST_USERNAME')
+remote_broadcast_password = os.getenv('REMOTE_BROADCAST_PASSWORD')
 
 
 templateLoader = FileSystemLoader(searchpath='./')

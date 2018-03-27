@@ -142,7 +142,28 @@
         </http-headers>
     </mount>
     -->
+    <!-- FULL LIFE MOUNT POINT -->
+    <mount type="normal">
+        <mount-name>/full-life</mount-name>
 
+        <username>{{ full_life_username }}</username>
+        <password>{{ full_life_password }}</password>
+
+        <burst-size>65536</burst-size>
+        <!-- <on-connect>/home/icecast/bin/stream-start</on-connect>
+        <on-disconnect>/home/icecast/bin/stream-stop</on-disconnect> -->
+    </mount>
+    <!-- REMOTE BROADCAST MOUNT POINT -->
+    <mount type="normal">
+        <mount-name>/remote-broadcast</mount-name>
+
+        <username>{{ remote_broadcast_username }}</username>
+        <password>{{ remote_broadcast_password }}</password>
+
+        <burst-size>65536</burst-size>
+        <!-- <on-connect>/home/icecast/bin/stream-start</on-connect>
+        <on-disconnect>/home/icecast/bin/stream-stop</on-disconnect> -->
+    </mount>
     <!-- Normal mounts -->
     <!--
     <mount type="normal">
