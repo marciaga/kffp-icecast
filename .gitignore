@@ -1,2 +1,3 @@
 .env
 icecast.xml
+!templates/icecast.xml
