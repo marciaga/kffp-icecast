@@ -22,7 +22,11 @@ outputText = template.render(
     username=username,
     password=password,
     source_password=source_password,
-    relay_password=relay_password
+    relay_password=relay_password,
+    full_life_username=full_life_username,
+    full_life_password=full_life_password,
+    remote_broadcast_username=remote_broadcast_username,
+    remote_broadcast_password=remote_broadcast_password
 )
 
 icecast_config = open('./icecast.xml', 'w')
