@@ -10,9 +10,14 @@ source_password = os.getenv('SOURCE_PASSWORD')
 relay_password = os.getenv('RELAY_PASSWORD')
 full_life_username = os.getenv('FULL_LIFE_USERNAME')
 full_life_password = os.getenv('FULL_LIFE_PASSWORD')
-remote_broadcast_username = os.getenv('REMOTE_BROADCAST_USERNAME')
-remote_broadcast_password = os.getenv('REMOTE_BROADCAST_PASSWORD')
-
+remote_user_1_username = os.getenv('REMOTE_USER_1_USERNAME')
+remote_user_1_password = os.getenv('REMOTE_USER_1_PASSWORD')
+remote_user_2_username = os.getenv('REMOTE_USER_2_USERNAME')
+remote_user_2_password = os.getenv('REMOTE_USER_2_PASSWORD')
+remote_user_test_username = os.getenv('REMOTE_USER_TEST_USERNAME')
+remote_user_test_password = os.getenv('REMOTE_USER_TEST_PASSWORD')
+remote_broadcast_username=os.getenv('REMOTE_BROADCAST_USERNAME')
+remote_broadcast_password=os.getenv('REMOTE_BROADCAST_PASSWORD')
 
 templateLoader = FileSystemLoader(searchpath='./')
 templateEnv = Environment(loader=templateLoader)
@@ -26,7 +31,13 @@ outputText = template.render(
     full_life_username=full_life_username,
     full_life_password=full_life_password,
     remote_broadcast_username=remote_broadcast_username,
-    remote_broadcast_password=remote_broadcast_password
+    remote_broadcast_password=remote_broadcast_password,
+    remote_user_1_username=remote_user_1_username,
+    remote_user_1_password=remote_user_1_password,
+    remote_user_2_username=remote_user_2_username,
+    remote_user_2_password=remote_user_2_password,
+    remote_user_test_username=remote_user_test_username,
+    remote_user_test_password=remote_user_test_password
 )
 
 icecast_config = open('./icecast.xml', 'w')

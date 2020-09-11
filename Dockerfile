@@ -1,13 +1,12 @@
 FROM alpine:3.3
-MAINTAINER @VITIMan https://github.com/VITIMan
 
-ENV ICECAST_VERSION 2.4.2-r1
+# ENV ICECAST_VERSION 2.4.4-r2
 
 ARG user=icecast
 ARG group=icecast
 
 RUN apk -q update \
-    && apk -q --no-progress add icecast="$ICECAST_VERSION" \
+    && apk -q --no-progress add icecast \
     && rm -rf /var/cache/apk/*
 
 COPY icecast.xml /usr/share/icecast/icecast.xml

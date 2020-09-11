@@ -164,6 +164,27 @@
         <!-- <on-connect>/home/icecast/bin/stream-start</on-connect>
         <on-disconnect>/home/icecast/bin/stream-stop</on-disconnect> -->
     </mount>
+    <!-- REMOTE USER 1 MOUNT POINT -->
+    <mount type="normal">
+        <mount-name>/remote1</mount-name>
+        <username>{{ remote_user_1_username }}</username>
+        <password>{{ remote_user_1_password }}</password>
+        <burst-size>65536</burst-size>
+    </mount>
+    <!-- REMOTE USER 2 MOUNT POINT -->
+    <mount type="normal">
+        <mount-name>/remote2</mount-name>
+        <username>{{ remote_user_2_username }}</username>
+        <password>{{ remote_user_2_password }}</password>
+        <burst-size>65536</burst-size>
+    </mount>
+    <!-- REMOTE USER TEST MOUNT POINT -->
+    <mount type="normal">
+        <mount-name>/remote-test</mount-name>
+        <username>{{ remote_user_test_username }}</username>
+        <password>{{ remote_user_test_password }}</password>
+        <burst-size>65536</burst-size>
+    </mount>
     <!-- Normal mounts -->
     <!--
     <mount type="normal">
